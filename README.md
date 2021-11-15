@@ -14,8 +14,7 @@ The goal of this project was to  determine who will be retiring soon and how man
 
 - Of those eligible employees, there are 402 Engineers, 392 Senior Staff, 332 Staff, 290 Senior Engineers, 77 Technique Leaders, and 56 Assistant Engineers. 
 ## Summary
-
-
+- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 ```
 SELECT DISTINCT ON (emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
 INTO employees_leaving
@@ -28,7 +27,7 @@ WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1962-01-01' AND '19
 	AND (de.from_date BETWEEN '1985-01-01' AND '1988-12-31')
 ORDER BY e.emp_no
 ```
-
+- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 ```
 SELECT DISTINCT ON (emp_no) e.emp_no, d.dept_name, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
