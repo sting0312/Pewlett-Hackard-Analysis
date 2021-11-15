@@ -1,7 +1,5 @@
 # Pewlett-Hackard-Analysis
 
-# Pewlett-Hackard-Analysis
-
 
 ## Overview
 The goal of this project was to  determine who will be retiring soon and how many positions Pewlett Hackard will need to fill. 
